@@ -78,9 +78,12 @@ ul {
     color: #ffffff;
     letter-spacing: 2px;
     font-family: "Open Sans";
+
+
 }
 .menu ul li:hover {
     color: black;
+
 }
 .container {
     width: 1170px;
@@ -400,32 +403,58 @@ li a {
     text-align: center;
     padding: 57px 0;
 }
-li {
-    padding: 0 32px;
-}
+/*li {*/
+/*    padding: 0 32px;*/
+/*}*/
 .slide-icon {
     padding-bottom: 25px;
 }
 .slick-prev::before {
-    content: '\003C';
-    background-color: white;
+    content: '\003C'!important;
     width: 40px;
     height: 40px;
     transform: rotate(45deg);
-    left: -20px;
     position: absolute;
 }
 .slider {
     position: relative;
 }
+.slick-prev,.slick-next{
+	background-color: white!important;
+	width: 40px!important;
+	height: 40px!important;
+	transform: rotate(45deg)!important;
+	padding: 0;
+
+}
 .slick-next::before {
-    content: "\003E";
-    background-color: white;
+    content: "\003E"!important;
     width: 40px;
     height: 40px;
     transform: rotate(45deg);
-    right: -20px;
     position: absolute;
+}
+.slick-prev:before, .slick-next:before {
+	font-family: "Open Sans light"!important;
+	font-size: 20px;
+	opacity: 1;
+	color: #000;
+	transform: rotate(-45deg);
+	color: #000!important;
+	left: 23px;
+	top: 5px;
+	line-height: 0!important;
+	font-weight: bold;
+}
+.slick-prev {
+	left: -20px!important;
+}
+.slick-next {
+	right: -20px!important;
+}
+.slick-next:before{
+	left: 5px;
+	top: 23px;
 }
 .pad40 {
     padding-bottom: 40px;
@@ -676,10 +705,75 @@ li {
     .section-empl .col-lg-4 {
         width: 33.3%;
     }
-    .monitor img {
-        width: 60%;
+    .monitor img{
+        width: 75%;
     }
-}
+	.monitor {
+		right:-130px;
+		position: absolute;
+		top:-120px;
+	}
+	.relative{
+		position: relative;
+	}
+	.why-choose-us .col-lg-4 {
+		width: 33.3%;
+	}
+	.row {
+		flex-wrap: nowrap;
+	}
+	.card-news h4{
+		font-size: 12px;
+		letter-spacing: 3px;
+	}
+	.card-news h5{
+		font-size: 9px;
+		letter-spacing: 3px;
+	}
+	.choose {
+		font-size: 13px;
+		color: #777777;
+	}
+	p {
+		font-size: 13px;
+	}
+	.slider-title {
+		font-size: 13px;
+	}
+	.form-title{
+		letter-spacing: 7px;
+	}
+	.text-center {
+	font-size: 25px;
+	letter-spacing: 40px;
+	}
+	.txt-bb{
+		font-size: 18px;
+		letter-spacing: 5px;
+	}
+	.section-lets-talk {
+		padding: 70px 0;
+	}
+
+	.container {
+		width: 950px;
+		padding: 0 20px;
+	}
+
+	.footer-link{
+		padding-bottom: 60px;
+	}
+	.footer {
+		padding-top: 70px;
+	}
+	.tab ul li {
+		padding: 0 30px;
+	}
+
+	}
+
+
+
 @media screen and (max-width: 768px) {
     .section-lets-talk {
         width: 100%;
