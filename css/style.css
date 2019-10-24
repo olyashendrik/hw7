@@ -743,7 +743,7 @@ li a {
 	.form-title{
 		letter-spacing: 7px;
 	}
-	.text-center {
+	.main-banner .text-center {
 	font-size: 25px;
 	letter-spacing: 40px;
 	}
@@ -768,41 +768,95 @@ li a {
 	}
 	.tab ul li {
 		padding: 0 30px;
+		font-size: 12px;
 	}
-
+	.section {
+		margin: 70px 0;
 	}
 
 
 
 @media screen and (max-width: 768px) {
-    .section-lets-talk {
-        width: 100%;
+    .container{
+		width: 768px;
+	}
+	.xs-container{
+		width: 680px;
+	}
+	blockquote {
+		font-size: 18px;
+	}
+	.author {
+		font-size: 9px;
+	}
+	.main-banner .text-center {
+		font-size: 25px;
+		letter-spacing: 30px;
+
+	}
+
+	.service-title {
+		font-size: 12px;
+	}
+	.section-title  {
+		padding-bottom: 55px;
+	}
+	.card-title {
+		letter-spacing: 6px;
+		padding-top: 20px;
+		padding-bottom:15px;
+
+	}
+	.pos {
+		padding-top: 0;
+	}
+	.banner-title p {
+		font-size: 16px;
+		padding-top: 80px;
+	}
+	.section-empl {
+		padding-bottom: 75px;
+	}
+	.section-lets-talk {
+
         position: relative;
         padding: 100px;
     }
     .txt-content {
-        width: 30%;
+        width: 50%;
         padding-left: 30px
-    }
-    .monitor {
-        position: absolute;
-        top: -10%;
-        right: -40%;
-    }
-    .container {
+	}
+	.button-bb{
+	padding: 10px 30px;
+	}
+	.lets-talk-title {
+		line-height:1.5;
+	}
+
+}
+
+	.container {
         margin: 0;
         width: 100%;
     }
-    .section-lets-talk {
-        padding: 10px;
-    }
+	.section-lets-talk {
+		padding: 40px 0;
+	.monitor img{
+		width: 65%;
+	}
+	.monitor {
+		right:-130px;
+		position: absolute;
+		top:-120px;
+	}
     .header {
         display: block;
-        position: relative;
+		width: 25%;
+		justify-content: flex-end;
+
     }
     .nav-menu {
-        display: block;
-        position: absolute;
+
         left: 0;
         right: 0;
         top: 0;
@@ -812,18 +866,16 @@ li a {
     .nav-menu li:not(:last-of-type) {
         marin-bottom: 10px;
     }
-    .main-banner .text-center {
-        font-size: 27px;
-        letter-spacing: 40px;
-        padding-left: 40px;
-    }
+	.menu ul {
+		display: block;
+
+	}
+}
+
     .section {
         margin: 40px 0;
     }
-    .section-title {
-        font-size: 14px;
-        margin-bottom: 20px;
-    }
+
     .col-xs {
         width: 100%;
     }
@@ -831,8 +883,8 @@ li a {
         margin-bottom: 10px;
     }
 }
-@media screen and (min-width: 320px) {
-}
+@media screen and (min-width: 320px)
+
 /*img {*/
 /*	-webkit-filter: grayscale(100%); !* Safari 6.0 - 9.0 *!*/
 /*	filter: grayscale(100%);*/
